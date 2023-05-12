@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
+}
+
+:root{
+  --bg-color: #F6F7FB;
+  --main-color: #EE972D;
+  --title-color:#222222;
+  --text-color: #222222A6;
+}
+
+html{
+  overflow-x: hidden;
+}
+
+body{
+  background: var(--bg-color);
+  color: var(--title-color);
+}
+
+section{
+  min-height: 100vh; 
+  padding: 5rem 10% 4rem;
+}
+
+.header{
+  position: fixed;
+  width: 100%;
+  padding: 1.5rem 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a{
+  display: inline-flex;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin-left: 2.6rem;
+  transition: .2s;
+}
+
+.navbar a:hover{
+  color: var(--main-color);
+  transform: scale(1.2);
+}
+
+.home{
+  background-color: #14171b;
+  background-image: url(../img/logo_bg.svg), url(../img/bg.svg);
+  background-size:  100vw, cover;
+  background-repeat: no-repeat;
+  background-position: center center, center center;
+}
+
+.heading{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+span{
+  color: var(--main-color);
+}
+
+.sobre p{
+  color: var(--text-color);
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 2.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* ------------------Personalizar Scrollbar--------------- */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+}
