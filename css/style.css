@@ -200,10 +200,57 @@ span{
   line-height: 1.25rem;
   padding: 1.2rem 0;
 }
+/*--------------------NOSSOS PROJETOS-----------------------*/
 
+.projetos__subtitulo {
+  
+  text-align: center;
+}
 
+.projetos__slider {
+  margin-top: 5.6rem;
+  display: flex;
+  gap: 24px;
+}
 
+.projetos__card_slider {
+  background-color: #FFFFFF;
+  width: 379px;
+}
 
+.projetos__card_conteudo {
+ 
+  margin: 36px 26px;
+}
+
+.projetos__tipo_card {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+}
+
+.projetos__tipo_card__tipo{
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.projetos__tipo_card__tema{
+  font-size: 12px;
+}
+
+.projetos__card_conteudo p {
+  margin-bottom: 20px;
+}
+
+.projetos__card_conteudo a {
+  color: var(--main-color);
+}
+
+.projetos__card_titulo {
+  font-size: 20px;
+  font-weight: 600;
+  
+}
 
 
 
