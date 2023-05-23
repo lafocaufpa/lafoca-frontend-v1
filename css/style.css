@@ -30,16 +30,22 @@ body{
 
 section{
   min-height: 100vh; 
-  padding: 5rem 10% 4rem;
+  padding: 5rem 8% 4rem;
 }
 
 .header{
   position: fixed;
   width: 100%;
-  padding: 1.5rem 10%;
+  padding: .8rem 8%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
+}
+
+.show-background{
+  background-color: #16181bc5; 
 }
 
 .navbar a{
@@ -58,7 +64,7 @@ section{
 
 .home{
   background-color: #14171b;
-  background-image: url(../img/logo_bg.svg), url(../img/bg.svg);
+  background-image: url(../img/home/logo_bg.svg), url(../img/home/bg.svg);
   background-size:  100vw, cover;
   background-repeat: no-repeat;
   background-position: center center, center center;
@@ -69,6 +75,7 @@ section{
   font-size: 2rem;
   font-weight: 800;
   margin-bottom: 2rem;
+  word-wrap: break-word;
 }
 
 span{
@@ -83,7 +90,116 @@ span{
   line-height: 2.2rem;
 }
 
+.container-sobre{
+  position: relative;
+  left: -12rem;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 4rem;
+  height: 38rem;
+  width: 100vw; 
+}
 
+.img_lateral img{
+  position: relative;
+  height:  100%;
+}
+
+.img_lateral .bg-laranja{
+  position: absolute;
+  top: 0;
+  left: 3rem;
+}
+
+.img_lateral .img-girl{
+  position: absolute;
+  top: 0;
+  left: 14rem;
+}
+
+.container-accordion{
+  height: 100%;
+  width: 42vw;
+  min-width: 35rem;
+  margin-right: 2rem;
+}
+
+.container-accordion h2,
+.container-accordion p {
+  text-align: left;
+}
+
+.container-accordion h2{
+  margin-bottom: 0.6rem;
+}
+
+.container-accordion > p{
+  margin-bottom: 2.3rem;
+}
+
+.accordion {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #EBEBEB;
+  color: var(--title-color);
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 1.2rem 2.8rem;
+  width: 100%;
+  max-width: 42rem;
+  height: 4.96rem;
+  text-align: left;
+  border-radius: .3rem;
+  cursor: pointer;
+}
+
+.accordion img {
+  margin-right: 1rem;
+  width: 2.3rem;
+}
+
+.accordion:hover {
+  box-shadow: 3px 3px 7px #2c2c2c2d;
+}
+
+.accordion:after {
+  margin-left: auto;
+  content: '\02795'; 
+  font-size: 1rem;
+}
+
+.active:after {
+  content: "\2796"; 
+}
+
+.active {
+  box-shadow: 3px 3px 7px #2c2c2c2d;
+}
+
+.panel {
+  background-color: #EBEBEB;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 3px 3px 7px #2c2c2c2d;
+  border-radius: .3rem;
+  max-width: 42rem;
+}
+
+.panel p{
+  border-top: 1px solid #C7C7C7;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30.6rem;
+  font-size: .75rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  padding: 1.2rem 0;
+}
 
 
 
